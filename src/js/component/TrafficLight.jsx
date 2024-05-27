@@ -5,7 +5,7 @@ import ReactDOM from "react-dom";
 // Incluye tus estilos en el bundle de webpack
 import "../styles/index.css";
 
-// Define el componente `trafficLight`
+// Define el componente `TrafficLight`
 export default function TrafficLight() {
     const [selectedColor, setSelectedColor] = useState("red");
     return (
@@ -25,8 +25,3 @@ export default function TrafficLight() {
         </div>
     );
 }
-
-// Renderiza tu componente `trafficLight` en el elemento con id "app"
-ReactDOM.render(<TrafficLight />, document.querySelector("#app"));
-
-
